@@ -140,7 +140,7 @@ class Curler{
 
         $this->optAutoReferer = true;
 
-        $this->optFollowLocation = true
+        $this->optFollowLocation = true;
 
         $this->optMaxRedirs = 5;
 
