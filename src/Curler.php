@@ -254,7 +254,7 @@ class Curler{
     }
 
 
-    public function close() {
+    public function __destruct() {
         if (is_resource($this->ch)) {
             curl_close($this->ch);
         }
