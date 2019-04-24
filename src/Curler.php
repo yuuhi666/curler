@@ -184,14 +184,14 @@ class Curler{
     public function post($field, $json = false)
     {
         if (!$json) {
-            $this->field = http_build_query($field);
+            $field = http_build_query($field);
         }
 
         $this->addOptions(
               [
                   CURLOPT_URL => $this->url,
                   CURLOPT_POST => true,
-                  CURLOPT_POSTFIELDS => $this->field,
+                  CURLOPT_POSTFIELDS => $field,
               ]
           );
 
