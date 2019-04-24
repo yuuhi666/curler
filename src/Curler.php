@@ -181,9 +181,11 @@ class Curler{
      *
      * @return void
      */
-    public function post($field)
+    public function post($field, $json = false)
     {
-        $this->field = http_build_query($field);
+        if (!$json) {
+            $this->field = http_build_query($field);
+        }
 
         $this->addOptions(
               [
