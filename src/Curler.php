@@ -1,6 +1,6 @@
 <?php
 
-namespace Curler;
+namespace yuuhi666\Curler;
 
 class Curler{
 
